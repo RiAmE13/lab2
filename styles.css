@@ -1,0 +1,117 @@
+/* Селектор за тегом */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Селектор за класом */
+.content-section {
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+/* Комбінація селекторів */
+.content-section h2 {
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Селектор за тегом для елементів списку */
+ul li {
+  color: #333;
+  padding: 5px;
+}
+
+ul li::before {
+  content: "⚽";
+  color: #ffd700;
+  padding-right: 10px;
+}
+
+/* Відносне позиціонування */
+.relative-box {
+  position: relative;
+  top: 20px;
+  left: 30px;
+  padding: 10px;
+  background-color: #e6f7ff;
+  border: 2px solid #00aaff;
+}
+
+/* Абсолютне позиціонування */
+.absolute-box {
+  position: absolute;
+  top: 80%;
+  left: 85%;
+  width: 250px;
+  padding: 10px;
+  background-color: #31a095;
+  border: 2px solid #2d95b2;
+  transform: translateX(-50%);
+}
+
+/* Фіксоване позиціонування */
+.fixed-box {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #ffd700;
+  text-align: center;
+}
+
+.navbar {
+  overflow: hidden;
+  margin-top: 70px;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;      /* дозволяє переносити елементи на наступний ряд */
+    gap: 10px;            /* відстань між квадратами */
+    width: 320px;         /* ширина контейнера для зручності */
+    padding: 25px;
+}
+  
+  .square {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    flex-basis: calc(33.33% - 10px); /* кожен квадрат займає третину ряду, з урахуванням відступів */
+  }
+  .tall {
+    height: 200px;  /* другий блок першого ряду вдвічі вищим */
+  }
+/* Селектор за ID для футера */
+#footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5rem;
+}
